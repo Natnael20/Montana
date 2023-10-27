@@ -37,6 +37,7 @@
 
 h1,h2,h3,h4,h5,h6 {
     font-family: var(--font-family-sans-serif);
+    overflow: hidden;
 }
 
 h6 {
@@ -356,9 +357,15 @@ h6 {
   transform: scale(1.1);
 }
 
+@media screen and (max-width: 768px) {
+    .flex > .frame2 img {
+        height: 100%;
+    }
+}
+
 .seventh-info {
     position: absolute;
-    top: 70%;
+    top: 55%;
 }
 
 .centered-button {
@@ -391,6 +398,12 @@ h6 {
     padding: 30px;
 }
 
+@media screen and (max-width: 768px) {
+    #eighth-container > .row {
+        display: block;
+    }
+}
+
 .query {
     width: 100%;
     display: flex;
@@ -398,12 +411,7 @@ h6 {
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     padding: 30px;
-}
-
-@media screen and (max-width: 768px) {
-    .query {
-        display: block;
-    }
+    overflow: hidden;
 }
 
 .queryContact > button {
@@ -413,6 +421,21 @@ h6 {
     font-family:'Times New Roman', Times, serif;
     border-radius: 50px;
     padding: 15px;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+    .query {
+        display: block;
+        width: 100%;
+    }
+
+    .queryContact  {
+        display: block;
+        padding: 0;
+        width: 100%;
+        overflow: hidden;
+    }
 }
 
 #ninth-container {
@@ -423,11 +446,23 @@ h6 {
 
 .insta-pics {
     display: flex;
-    width: 100%;
+}
+
+
+@media screen and (max-width: 768px) {
+    #ninth-container > .insta-pics {
+        display: grid;
+        width:100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .insta-pic  {
+        width: 100%;
+    }
 }
 
 .insta-pic {
-    width: 50%;
     position: relative;
     overflow: hidden;
 }
@@ -480,8 +515,20 @@ visibility: visible;
     font-size: 2rem;
 }
 
+#footer {
+    padding: 0;
+    margin: 0;
+}
+
 #footer-container {
     padding: 70px;
+    
+}
+
+@media screen and (max-width: 768px) {
+    #footer-container > .row {
+        display: block;
+    }
 }
 
 .address p {
