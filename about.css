@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#background {
+    background-image: url("https://preview.colorlib.com/theme/montana/img/banner/bradcam.png.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    opacity:.8;
+    
+}
+
+#about-third-container {
+    margin-top: 10%;
+    background-image: url("https://preview.colorlib.com/theme/montana/img/banner/about_banner.png.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#about-forth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
