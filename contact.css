@@ -43,8 +43,9 @@ h6 {
     color: var(--primary);
 }
 
+
 #background {
-    background-image: url("https://preview.colorlib.com/theme/montana/img/banner/bradcam2.png.webp");
+    background-image: url("https://preview.colorlib.com/theme/montana/img/banner/bradcam3.png.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -56,6 +57,41 @@ h6 {
     position: relative;
 }
 
-#seventh-container {
-    margin-top: 35%;
+#contact-third-container {
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-group {
+    margin-top: 5%;
+    display: flex;
+    gap: 20px;
+}
+
+.form-group > input {
+    padding: 10px;
+    border: none;
+}
+
+.contact-button {
+    border: 1px solid var(--primary);
+    padding: 10px 25px;
+}
+
+.contact-button:hover {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+.location, .phone, .mail {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.location i,.phone i,.mail i {
+    font-size: 2rem;
+    padding: 10px 20px;
 }
