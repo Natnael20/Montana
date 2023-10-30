@@ -76,7 +76,7 @@
             <div class="col-md-8 mt-5">
                 <form action="hello">
                     <textarea name="message" id="" style="width: 100%; height: 40vh;"></textarea>
-                    <div class="form-group">
+                    <div class="form-group" id="contact-form">
                         <input type="text" id="firstname" name="firstname" placeholder="firstname" required>
                         <input type="email" id="email" name="email" placeholder="email" required>
                     </div>
@@ -150,10 +150,10 @@
                     <h2>News Letter</h2>
                     <form id="newsletterForm">
                         <div class="form-group">
-                            <input type="email" id="email" name="email" class="form-control"
-                                placeholder="Your email address" required>
+                            <input type="email" id="email" name="email" class="form-control sub-input"
+                                placeholder="Email" required>
+                            <button type="submit" class="btn email-button">Sign Up</button>
                         </div>
-                        <button type="submit" class="btn email-button">Sign Up</button>
                     </form>
                     <p id="message"></p>
                     <p class="mt-5 opacity-75">Subscribe newsletter to get updates

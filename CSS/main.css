@@ -557,13 +557,31 @@ visibility: visible;
 }
 
 .subscribe {
-    display: flex;
+    display: inline-flex;
 }
- 
+
+#newsletterForm {
+    display: inline-flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.sub-input {
+    width: 100%;
+}
+
+.sub-input:focus {
+    outline: none;
+    border: none;
+}
+
 .email-button {
     display: block;
     background-color:var(--primary);
     color: white;
+    position: absolute;
+    top:0;
+    right: 0;
 }
 
 .email-button:hover {
