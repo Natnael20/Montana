@@ -62,49 +62,69 @@ h6 {
     position: relative;
 }
 
-#contact-form {
-    margin-top: 5%;
+.contact-page h1 {
+    margin-top: 25%;
+}
+
+.third-container > .row {
+    display: flex;
+    justify-content: center;
+}
+
+.reach {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.location-logo i, .telephone-logo i, .envelope-logo i{
+    font-size: 1.5rem;
+}
+
+.telephone-logo i {
+    margin-right: 15px;
+}
+
+.telephone-info {
+    margin-right: 25px;
+}
+
+.user-input {
+    margin-top:5%;
     display: flex;
     gap: 20px;
 }
 
-#contact-form > input {
+input {
     padding: 10px;
+    width: 100%;
     border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+}
+
+textarea {
+    width: 100%;
+    resize: none;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #000;
 }
 
 @media screen and (max-width: 768px) {
-    #contact-form {
+    .form-group {
         display: grid;
     }
 }
 
 .contact-button {
-    border: 1px solid var(--primary);
     padding: 10px 25px;
-}
-
-.contact-button:hover {
+    color: #fff;
     background-color: var(--primary);
-    color: var(--white);
 }
 
-.contact-input {
-    overflow: hidden;
-}
-
-.location, .phone, .mail {
-    display: flex;
-    gap: 10px;
-}
-
-@media screen and (max-width: 768px) {
-    .location, .phone, .mail {
-        display: grid;
-    }
-}
-
-.location i,.phone i,.mail i {
-    font-size: 2rem;
-    padding: 10px 20px;
+.contact-button:hover .contact-button > a {
+    color: #fff;
 }

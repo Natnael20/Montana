@@ -101,14 +101,13 @@ h6 {
     height: 5px;
     background-color: white;
     transform: scaleX(0);
-    transform-origin: right;
-    transition: transform.3s ease-in-out;
+    transform-origin: center;
+    transition: transform .3s ease-in-out;
 }
 
 .nav-link:hover::before {
     transform: scaleX(1);
     opacity: 1;
-    transform-origin: left;
     transition: transform.3s ease-in-out;
 }
 
@@ -381,6 +380,7 @@ h6 {
     color: white;
     font-size: 1.1rem;
     font-family:'Times New Roman', Times, serif;
+    border: 2px solid #007bff;
 }
 
 .frame2:hover .centered-button {

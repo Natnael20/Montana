@@ -70,48 +70,53 @@
             </div>
         </div>
     </div>
-    <div class="container mt-5" id="contact-forth-container">
-        <h1>Get in touch</h1>
+    <div class="container third-container">
+        <h1 class="text-capitalize display-6 mt-5 fw-bold">Get In Touch</h1>
         <div class="row">
-            <div class="col-md-8 mt-5">
+            <div class="col-lg-6 col-sm-6 mt-5">
                 <form action="hello">
-                    <textarea name="message" id="" style="width: 100%; height: 40vh;"></textarea>
-                    <div class="form-group" id="contact-form">
-                        <input type="text" id="firstname" name="firstname" placeholder="firstname" required>
-                        <input type="email" id="email" name="email" placeholder="email" required>
+                    <div class="text-area">
+                        <textarea name="message" id="message" rows="10" placeholder="Message"></textarea>
                     </div>
                     <div class="form-group">
-                        <input type="subject" id="subject" name="subject" placeholder="subject" required>
+                        <div class="user-input">
+                            <input type="text" id="firstname" class="p-2" name="firstname" placeholder="Firstname" required>
+                            <input type="email" id="email" class="p-2" name="email" placeholder="Email" required>
+                        </div>
                     </div>
-                    <button class="btn mt-5 contact-button">
+                    <div class="form-group">
+                        <input type="subject" style="width: 100%;" id="subject" class="mt-3 p-2" name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="p-1">
+                        <button class="btn mt-5 contact-button" type="button">
                         <a href="mailto:support@gmail.com" class="text-decoration-none">Send</a></button>
+                    </div>
                 </form>
             </div>
-            <div class="col mt-5 contact-input">
-                <div class="location">
-                    <i class="fa fa-home" aria-hidden="true"></i>
-                    <div class="location-name">
-                        <h4>Buttonwood, California.</h4>
-                        <p>Rosemead, CA 91770
-                        </p>
-                    </div>
-                </div>
-                <div class="phone">
-                    <i class="fa fa-phone" aria-hidden="true"></i>
-                    <div class="phone-number">
-                        <a href="tel:+1 253 565 236" class="text-decoration-none">+1 253 565 2365
-                        </a>
-                        <p>
-                            Mon to Fri 9am to 6pm
-                        </p>
-                    </div>
-                </div>
-                <div class="mail">
-                    <i class="fa fa-envelope" aria-hidden="true"></i>
-                    <div class="mail-address">
-                        <h4><a href="mailto:support@gmail.com" class="text-decoration-none">support@gmail.com</a></h4>
-                        <p>Send us your query anytime!
-                        </p>
+            <div class="col-lg-5 col-sm-6 mt-5">
+                <div class="specific-information">
+                    <div class="reach ">
+                        <div class="location-logo mt-3">
+                            <i class="fa fa-home" aria-hidden="true"></i>
+                        </div>
+                        <div class="inside-info">
+                            <h4>Californa,United States</h4>
+                            <p>Santa monica bullevard</p>
+                        </div>
+                        <div class="telephone-logo mt-3">
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                        </div>
+                        <div class="telephone-info">
+                            <h4><a href="tel:00(440)9865562" class="text-decoration-none text-black">00 (440) 9865 562</a></h4>
+                            <p>Mon to Fri 9am to 6 pm</p>
+                        </div>
+                        <div class="envelope-logo mt-3">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                        </div>
+                        <div class="envelope-info">
+                            <h4><a href="mailto:support@hotmail.com" class="text-decoration-none text-black">support@hotmail.com</a></h4>
+                            <p>Send us your query anytime!</p>
+                        </div>
                     </div>
                 </div>
             </div>
