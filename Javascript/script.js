@@ -23,3 +23,23 @@ function isValidEmail(email) {
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   return emailRegex.test(email);
 }
+
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+      console.log(entry)
+      if(entry.isIntersecting) {
+          entry.target.classList.add('show');
+      }
+  });
+});
+
+const topElements = document.querySelectorAll('.top');
+const bottomElements = document.querySelectorAll('.bottom');
+const leftElements = document.querySelectorAll('.left');
+const rightElements = document.querySelectorAll('.right');
+
+topElements.forEach((el) => observer.observe(el));
+bottomElements.forEach((el) => observer.observe(el));
+leftElements.forEach((el) => observer.observe(el));
+rightElements.forEach((el) => observer.observe(el));
